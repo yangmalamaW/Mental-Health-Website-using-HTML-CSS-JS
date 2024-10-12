@@ -1,12 +1,14 @@
 body {
     font-family: 'Lora', serif;
     margin: 0;
-    padding: 0; 
-    background-color: #E0F7F7; /* Slightly lighter background */
+    padding: 0;
+    background-color: #E0F7F7;
+    /* Slightly lighter background */
 }
 
 header {
-    background-color: #008080; /* Teal Green */
+    background-color: #008080;
+    /* Teal Green */
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -15,17 +17,22 @@ header {
     font-family: 'Poppins', sans-serif;
     position: fixed;
     z-index: 1000;
-    width: 98%; /* Full-width header */
-    top: 0; /* Ensure it sticks to the top */
-    left: 0; /* Prevent gap on the left */
-    margin: 0; /* Remove any margin */
+    width: 98%;
+    /* Full-width header */
+    top: 0;
+    /* Ensure it sticks to the top */
+    left: 0;
+    /* Prevent gap on the left */
+    margin: 0;
+    /* Remove any margin */
 }
 
 .logo {
     font-size: 24px;
     font-weight: bolder;
-    color: #fff; /* Dark grey color */
-    
+    color: #fff;
+    /* Dark grey color */
+
 }
 
 nav ul {
@@ -41,7 +48,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Soft Pink for links */
+    color: #fff;
+    /* Soft Pink for links */
     font-size: 16px;
 }
 
@@ -168,7 +176,7 @@ nav ul li a {
     background-color: #FF69B4;
 }
 
-.comments-section form button{
+.comments-section form button {
     background-color: #FFB6C1;
     /* pink */
     color: #fff;
@@ -205,7 +213,8 @@ nav ul li a {
 }
 
 footer {
-    background-color: #008080; /* Teal Green */
+    background-color: #008080;
+    /* Teal Green */
     color: #fff;
     text-align: center;
     padding: 20px;

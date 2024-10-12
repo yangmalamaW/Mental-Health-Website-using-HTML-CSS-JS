@@ -1,12 +1,14 @@
 body {
     font-family: 'Lora', serif;
     margin: 0;
-    padding: 0; 
-    background-color: #E0F7F7; /* Slightly lighter background */
+    padding: 0;
+    background-color: #E0F7F7;
+    /* Slightly lighter background */
 }
 
 header {
-    background-color: #008080; /* Teal Green */
+    background-color: #008080;
+    /* Teal Green */
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -21,8 +23,9 @@ header {
 .logo {
     font-size: 24px;
     font-weight: bolder;
-    color: #fff; /* Dark grey color */
-    
+    color: #fff;
+    /* Dark grey color */
+
 }
 
 nav ul {
@@ -38,7 +41,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Soft Pink for links */
+    color: #fff;
+    /* Soft Pink for links */
     font-size: 16px;
 }
 
@@ -57,7 +61,8 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     padding: 60px 40px;
-    background-color: #E0F7F7; /* Light teal background */
+    background-color: #E0F7F7;
+    /* Light teal background */
 }
 
 .content {
@@ -73,13 +78,15 @@ nav ul li a {
 
 .content p {
     font-size: 18px;
-    color: #444444; /* Medium grey for paragraph */
+    color: #444444;
+    /* Medium grey for paragraph */
     line-height: 1.5;
     margin-bottom: 30px;
 }
 
 button {
-    background-color: #FFB6C1; /* pink */
+    background-color: #FFB6C1;
+    /* pink */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -89,28 +96,35 @@ button {
 }
 
 button:hover {
-    background-color: #FF69B4; /* Darker Pink on Hover */
+    background-color: #FF69B4;
+    /* Darker Pink on Hover */
 }
 
 .image img {
     max-width: 800px;
     height: 100%;
     margin-bottom: 50px;
-}  
+}
 
 .content-section {
     padding: 40px;
-    background-color: white; /* White */
+    background-color: white;
+    /* White */
     margin: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .content-section h3 {
-    font-family: 'Poppins', sans-serif; /* Section heading font */
-    font-size: 1.8em; /* Section heading size */
+    font-family: 'Poppins', sans-serif;
+    /* Section heading font */
+    font-size: 1.8em;
+    /* Section heading size */
 }
+
 .content-section p {
-    font-size: 1em; /* Standard paragraph size */
+    font-size: 1em;
+    /* Standard paragraph size */
 }
 
 
@@ -139,7 +153,8 @@ button:hover {
 }
 
 footer {
-    background-color: #008080; /* Teal Green */
+    background-color: #008080;
+    /* Teal Green */
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -147,5 +162,4 @@ footer {
     bottom: 0;
     width: auto;
     margin-top: 20px;
-  }
-
+}
