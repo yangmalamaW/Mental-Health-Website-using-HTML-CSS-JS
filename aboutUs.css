@@ -1,10 +1,13 @@
+/* General Responsive Styling */
 body {
     font-family: 'Lora', serif;
     margin: 0;
-    padding: 0; 
-    background-color: #E0F7F7;/* Slightly lighter background*/
+    padding: 0;
+    background-color: #E0F7F7; /* Slightly lighter background */
+    overflow-x: hidden; /* Avoid horizontal scrolling */
 }
 
+/* Header Styling */
 header {
     background-color: #008080; /* Teal Green */
     color: #fff;
@@ -13,16 +16,16 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    width: 98%;
+    top: 0; /* Ensure it's at the top */
     position: fixed;
     z-index: 1000;
-    width: 98%;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bolder;
-    color: #fff; /* Dark grey color */
-    
+    color: #fff;
 }
 
 nav ul {
@@ -38,10 +41,146 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Soft Pink for links */
+    color: #fff;
     font-size: 16px;
 }
 
+/* Theme Touch for Links */
+nav ul li a:hover {
+    color: #FFB6C1; /* Light pink on hover */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    position: relative;
+}
+
+.about-us-text p{
+    font-size: large;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    color: #444444; /* Medium grey for paragraph */
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.why-mhsh p{
+    font-size: large;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    color: #444444; /* Medium grey for paragraph */
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+/* Image Styling */
+.about-us-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.why-mhsh-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.why-mhsh-images .image-box {
+    width: 30%;
+}
+
+.why-mhsh-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.why-mhsh-images h3 {
+    text-align: center;
+    color: #008080;
+}
+
+h2 {
+    color: #008080;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #008080;
+    /* Teal Green */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .about-us-image img {
+        height: auto;
+    }
+
+    .why-mhsh-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .why-mhsh-images .image-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .why-mhsh-images .image-box {
+        width: 100%;
+    }
+}
+
+/* Search Bar and Icons */
 .icons a {
     margin-left: 15px;
 }
@@ -49,38 +188,6 @@ nav ul li a {
 .icons img {
     width: 24px;
     height: 24px;
-    filter: invert(19%) sepia(12%) saturate(572%) hue-rotate(152deg) brightness(91%) contrast(91%);
-}
-
-.content{
-    background-color: rgba(253, 186, 197, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    max-width: 98%;
-    height: 550px;  
-    padding: 10px;
-    margin: 30px;
-    position: relative;
-    top: 20px;
-}
-
-.content h1{
-    font-family: 'Poppins', sans-serif;
-    color: #008080;
-    text-align: center;
-}
-
-.content h2{
-    font-family: 'Poppins', sans-serif;
-    color: #008080;
-    margin-top: 20px;
-}   
-
-.content p{
-    font-size: 18px;
-    color: #444444; /* Medium grey for paragraph */
-    line-height: 1.6;
-    margin-bottom: 30px;
 }
 
 /* Search Bar */
@@ -106,15 +213,3 @@ nav ul li a {
 .hidden {
     display: none;
 }
-
-footer {
-    background-color: #008080; /* Teal Green */
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: auto;
-    margin-top: 20px;
-  }
-

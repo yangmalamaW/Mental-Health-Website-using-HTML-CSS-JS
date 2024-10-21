@@ -138,7 +138,7 @@ button:hover {
     font-size: x-large;
     position: absolute;
     left: 800px;
-    background-color: rgba(255, 255, 255, 0.5); /* White with 80% opacity */
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
     border-radius: 10px; /* Optional: for rounded corners */
     padding: 20px; /* Space inside the container */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
@@ -206,7 +206,8 @@ span {
 }
 
 footer {
-    background-color: #008080; /* Teal Green */
+    background-color: #008080;
+    /* Teal Green */
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -214,5 +215,8 @@ footer {
     bottom: 0;
     width: auto;
     margin-top: 20px;
-  }
+}
+footer p {
+    color: #fff;
+}
 
