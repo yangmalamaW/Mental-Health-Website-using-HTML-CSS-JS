@@ -4,10 +4,10 @@ body {
     padding: 0;
     background-color: #E0F7F7;
     /* Slightly lighter background */
-
-}
-
-header {
+  
+  }
+  
+  header {
     background-color: #008080;
     /* Teal Green */
     color: #fff;
@@ -22,46 +22,46 @@ header {
     /* Full width */
     top: 0;
     /* Ensure it's at the top */
-}
-
-.logo {
+  }
+  
+  .logo {
     font-size: 24px;
     font-weight: bolder;
     color: #fff;
     /* Dark grey color */
-
-}
-
-nav ul {
+  
+  }
+  
+  nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin-right: 20px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
     color: #fff;
     /* Soft Pink for links */
     font-size: 16px;
-}
-
-.icons a {
+  }
+  
+  .icons a {
     margin-left: 15px;
-}
-
-.icons img {
+  }
+  
+  .icons img {
     width: 24px;
     height: 24px;
     filter: invert(19%) sepia(12%) saturate(572%) hue-rotate(152deg) brightness(91%) contrast(91%);
-}
-
-
-.container {
+  }
+  
+  
+  .container {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -71,43 +71,36 @@ nav ul li a {
     max-width: 600px;
     margin-top: 70px;
     left: 80px;
-    /* background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 30px auto; /* Center the container */
-    /* max-width: 600px;
-    margin-top: 70px; /* Adjust for header height */
-    /* margin-bottom: 0; Remove bottom margi */
-}
-
-.container h2 {
+    
+  }
+  
+  .container h2 {
     color: #008080;
-}
-
-input[type=text] {
+  }
+  
+  input[type=text] {
     width: 95%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-}
-
-.text-input {
+  }
+  
+  .text-input {
     width: 95%;
     height: 100px;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-}
-
-label {
+  }
+  
+  label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-}
-
-.button {
+  }
+  
+  .button {
     background-color: #FFB6C1;
     /* pink */
     color: #fff;
@@ -117,23 +110,23 @@ label {
     border-radius: 4px;
     resize: vertical;
     cursor: pointer;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: #FF69B4;
     /* Darker Pink on Hover */
-}
-
-.image img {
+  }
+  
+  .image img {
     width: 400px;
     height: 300px;
     position: absolute;
     left: 1100px;
     bottom: 0;
     /* filter: drop-shadow(1px 1px 10px rgba(0, 128, 128, 0.8)); */
-}
-
-.contact-content{
+  }
+  
+  .contact-content{
     font-family: 'Poppins', sans-serif;
     font-size: x-large;
     position: absolute;
@@ -143,46 +136,56 @@ button:hover {
     padding: 20px; /* Space inside the container */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
     max-width: 600px; /* Optional: limit the width */
-}
-
-h1{
+  }
+  
+  h1{
     color: #008080;
     font-size: 70px;
-}
-
-p{
+  }
+  
+  p{
     font-size: large;
     font-family: 'Lora', serif;
     font-size: 18px;
     color: #444444; /* Medium grey for paragraph */
     line-height: 1.5;
     margin-bottom: 30px;
-}
-
-.contact-info {
+  }
+  
+  .contact-info {
     margin-top: 15px;
-}
-
-.info-item {
+  }
+  
+  .info-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-}
-
-.icon {
+  }
+  
+  .icon {
     font-size: 20px;
     margin-right: 10px;
     color: #4CAF50; /* Green color */
-}
-
-span {
+  }
+  
+  span {
     color: #555;
     font-size: 16px;
-}
-
-
-/* Search Bar */
-.search-bar {
+  }
+  
+  input[type=text], input[type=email], input[type=tel], textarea {
+    width: 95%;
+    /* Ensure all input fields have the same width */
+    padding: 12px;
+    /* Same padding for consistent look */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 15px; /* Add margin to separate fields vertically */
+  }
+  
+  /* Search Bar */
+  .search-bar {
     position: absolute;
     top: 70px;
     right: 40px;
@@ -191,21 +194,21 @@ span {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.search-bar input {
+  }
+  
+  .search-bar input {
     border: 1px solid #E6E6FA;
     outline: none;
     padding: 8px;
     width: 200px;
     font-size: 14px;
-}
-
-.hidden {
+  }
+  
+  .hidden {
     display: none;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #008080;
     /* Teal Green */
     color: #fff;
@@ -215,8 +218,9 @@ footer {
     bottom: 0;
     width: auto;
     margin-top: 20px;
-}
-footer p {
+  }
+  footer p {
     color: #fff;
-}
-
+  }
+  
+  

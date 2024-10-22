@@ -188,6 +188,26 @@ nav ul li a {
     cursor: pointer;
 }
 
+/* Comment display styling */
+#commentsDisplay .comment {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#commentsDisplay .comment p {
+    margin: 0;
+}
+
+#commentsDisplay .comment hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+
 /* Search Bar */
 .search-bar {
     position: absolute;

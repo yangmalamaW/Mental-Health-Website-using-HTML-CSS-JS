@@ -14,9 +14,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Resourses</a></li>
+                <li><a href="resource.html">Resourses</a></li>
                 <li><a href="mood-tracker.html">Mood Tracker</a></li>
-                <li><a href="#">Quizzes</a></li>
+                <li><a href="Quiz.html">Quizzes</a></li>
                 <li><a href="blogs.html">Blog</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
@@ -92,9 +92,9 @@
         <aside class="sidebar">
             <h3>Related Posts</h3>
             <ul>
-                <li><a href="#">Related Post 1</a></li>
-                <li><a href="#">Related Post 2</a></li>
-                <li><a href="#">Related Post 3</a></li>
+                <li><a href="article1.html">Related Post 1</a></li>
+                <li><a href="blog4.html">Related Post 2</a></li>
+                <li><a href="article3.html">Related Post 3</a></li>
             </ul>
         </aside>
     </main>
@@ -102,14 +102,69 @@
     <!-- Comment Section -->
     <section class="comments-section">
         <h3>Comments</h3>
-        <form>
-            <textarea placeholder="Leave a comment..." rows="4"></textarea><br>
-            <button class="button" id="submit-button">Submit</button>
+        <form id="commentForm">
+            <textarea id="commentInput" placeholder="Leave a comment..." rows="4" required></textarea><br>
+            <button type="submit" class="button" id="submit-button">Submit</button>
         </form>
+        <div id="commentsDisplay"></div> <!-- This will display the comments -->
     </section>
+
     <footer>
         <p>&copy; 2024 Mental Health Hub. All rights reserved.</p>
     </footer>
+    <script>
+        // Function to load comments from localStorage and display them
+        function loadComments() {
+            const comments = JSON.parse(localStorage.getItem("comments")) || [];
+            const commentsDisplay = document.getElementById("commentsDisplay");
+            commentsDisplay.innerHTML = ""; // Clear previous comments
+            
+            // Loop through the comments and display each one
+            comments.forEach(function(comment) {
+                const commentDiv = document.createElement("div");
+                commentDiv.classList.add("comment");
+                commentDiv.innerHTML = `
+                    <p>${comment}</p>
+                    <hr>
+                `;
+                commentsDisplay.appendChild(commentDiv);
+            });
+        }
+    
+        // Function to handle form submission and add a new comment
+        document.getElementById("commentForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting and refreshing the page
+    
+            // Get the comment input value
+            const commentInput = document.getElementById("commentInput").value.trim();
+    
+            if (commentInput === "") {
+                alert("Please enter a comment."); // Alert if the comment is empty
+                return;
+            }
+    
+            // Get existing comments from localStorage or initialize an empty array
+            const comments = JSON.parse(localStorage.getItem("comments")) || [];
+    
+            // Add the new comment to the array
+            comments.push(commentInput);
+    
+            // Save the updated comments array back to localStorage
+            localStorage.setItem("comments", JSON.stringify(comments));
+    
+            // Reload the comments to display the new one
+            loadComments();
+    
+            // Clear the comment input field after submitting
+            document.getElementById("commentInput").value = "";
+        });
+    
+        // Load comments when the page loads
+        window.onload = function() {
+            loadComments();
+        };
+    </script>
+    
 </body>
 
 </html>
