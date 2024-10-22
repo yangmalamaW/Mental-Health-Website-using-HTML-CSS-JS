@@ -44,11 +44,15 @@ function saveMood() {
             date: new Date().toLocaleString()
         };
 
+        // Get existing data or initialize if empty
         let moodData = JSON.parse(localStorage.getItem('moodData')) || [];
         moodData.push(moodEntry);
+
+        // Save updated data back to local storage
         localStorage.setItem('moodData', JSON.stringify(moodData));
 
-        document.getElementById('note').value = '';  // Clear the note input
+        // Clear the form
+        document.getElementById('note').value = ''; 
         displayMoodSummary();  // Refresh the mood summary
     } else {
         alert('Please select a mood.');

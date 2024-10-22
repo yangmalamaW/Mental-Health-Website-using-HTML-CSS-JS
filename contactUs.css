@@ -52,13 +52,13 @@ body {
   
   .icons a {
     margin-left: 15px;
-  }
-  
-  .icons img {
+}
+
+.icons img {
     width: 24px;
     height: 24px;
     filter: invert(19%) sepia(12%) saturate(572%) hue-rotate(152deg) brightness(91%) contrast(91%);
-  }
+}
   
   
   .container {
