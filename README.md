@@ -1,4 +1,4 @@
-<h1>Mental Health Hub - Mental Health Awareness and Support Platform</h1>
+<h1>Mental Health Support Hub - Mental Health Awareness and Support Platform</h1>
 <h2>Project Overview</h2>
 Mental Health Hub is a web-based platform designed to raise awareness about mental health and provide support to individuals facing mental health challenges. The platform aims to offer resources, tools, and a community 
 space where users can interact, learn, and seek help for various mental health issues.
